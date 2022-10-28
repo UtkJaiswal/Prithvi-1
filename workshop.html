@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prithvi 2018| Workshops</title>
+    <link rel="shortcut icon"
+          href="http://www.prithvi-geo.in/prithvi17/images/xprithvi-icon.png.pagespeed.ic.rhggCfOJMM.webp"
+          type="image/png">
+    <script src="js/jquery-3.1.1.js"></script>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cinzel|Raleway:500');
+
+        body {
+            font-family: 'Raleway', sans-serif !important;
+            overflow-x: hidden;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+        }
+
+        h3 {
+            font-family: 'Cinzel', serif !important;
+        }
+
+        .activated {
+            font-weight: bold;
+        }
+
+        /*    .work-img         img {
+          background: url('img/loading.gif') no-repeat center;
+        }*/
+        .hovering a {
+            display: block;
+            text-decoration: none;
+            margin: 0 0px;
+            position: relative;
+            transition: all .5s;
+        }
+
+        .hovering a:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            content: ' ';
+            color: transparent;
+            background: black;
+            height: 1px;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .hovering a:hover {
+            color: black;
+            z-index: 1;
+        }
+
+        .hovering a:hover:after {
+            z-index: -10;
+            animation: fill 1s forwards;
+            opacity: 1;
+        }
+
+        @-webkit-keyframes fill {
+            0% {
+                width: 0;
+                height: 1px;
+            }
+            100% {
+                width: 100%;
+                height: 1px;
+            }
+        }
+
+        .clearfix:after, .container:after, .tab-nav:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        /* ==========
+        Setup Page */
+        body {
+
+            background: url(img/img8.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.8);
+            background-blend-mode: darken;
+            /*  -webkit-animation: backgroundScroll 48s linear infinite;
+              animation: backgroundScroll 48s linear infinite;*/
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div {
+            opacity: 1 !important;
+        }
+
+        @-webkit-keyframes backgroundScroll {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -3820px 0;
+            }
+        }
+
+        @keyframes backgroundScroll {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -3820px 0;
+            }
+        }
+
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 3em;
+            color: white;
+            letter-spacing: 0.05em;
+        }
+
+        body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+
+        body::-webkit-scrollbar {
+            width: 10px;
+            background-color: #F5F5F5;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #000000;
+            border: 2px solid #555555;
+        }
+
+        /* =================
+        Container Styling */
+        .navbar {
+            background: rgb(255, 255, 255);
+        }
+
+        .navbar a {
+            font-size: 0.95em;
+            color: black;
+            font-family: 'Cinzel', serif;
+        }
+
+        .container1 {
+            margin-top: 5%;
+            position: relative;
+            padding: 3em;
+            border-radius: 10px;
+        }
+
+        /* ===========
+        Tab Styling */
+        .tab-group {
+            position: relative;
+            border: 1px solid #eee;
+            margin-top: 2.5em;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .tab-group section {
+            opacity: 0;
+            height: 0;
+            padding: 0 1em;
+            overflow: hidden;
+            transition: opacity 0.4s ease, height 0.4s ease;
+        }
+
+        .tab-group section.active {
+            opacity: 1;
+            height: auto;
+            overflow: visible;
+        }
+
+        .tab-nav {
+            list-style: none;
+            margin: -2.5em -1px 0 0;
+            padding: 0;
+            height: 2.5em;
+            overflow: hidden;
+        }
+
+        .tab-nav li {
+            display: inline;
+        }
+
+        .tab-nav li a {
+            top: 1px;
+            position: relative;
+            display: block;
+            float: left;
+            border-radius: 10px 10px 0 0;
+            background: white;
+            line-height: 2em;
+            padding: 0 1em;
+            text-decoration: none;
+            color: grey;
+            font-family: 'Cinzel', serif;
+            margin-top: .5em;
+            margin-right: 1px;
+            transition: background .2s ease, line-height .2s ease, margin .2s ease;
+        }
+
+        .tab-nav li.active a {
+            background: #6EB590;
+            color: white;
+            line-height: 2.5em;
+            margin-top: 0;
+        }
+
+        .work-content {
+            display: flex;
+            direction: column;
+        }
+
+        .work-text {
+            flex: 3;
+        }
+
+        .work-img {
+            flex: 1;
+        }
+
+        .collapse.show {
+            height: 100vh;
+        }
+
+        @media only screen
+        and (orientation: landscape) {
+            .collapse.show {
+                height: 90vh;
+            }
+        }
+
+        @media (max-width: 991px) {
+            #nav-size {
+                font-size: 3.6rem;
+            }
+
+            .navbar-brand {
+                height: 60px;
+            }
+
+            #img-size {
+                height: 60px;
+                width: 160px;
+            }
+
+            .fixed-top {
+                text-align: center;
+                overflow: auto;
+            }
+        }
+
+        .footer {
+            font-family: 'Cinzel', serif;
+            color: black;
+            padding: 1rem;
+            background: rgb(255, 255, 255);
+            margin-top: 10em;
+            margin-bottom: -3em;
+            margin-left: -3em;
+            margin-right: -3em;
+        }
+
+        @media only screen
+        and (max-width: 992px)
+        and (orientation: portrait) {
+            .footer {
+                position: absolute;
+                bottom: -5em;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+        <a class="navbar-brand mr-4" href="home.html"><img src="img/prithvi.png" height="40px" width="100px"
+                                                           id="img-size"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-4" id="nav-size">
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="home.html#section2">About Us</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="event.html">Events</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mr-2 active activated hovering">
+                    <a class="nav-link" href="#">Workshops</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="seminar.html">Seminars</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="contact.html">Our Team</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="spons.html">Sponsors</a>
+                </li>
+                <li class="nav-item hovering">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container1">
+    <div class="tab-group">
+        <section id="tab1" title="Workshop: 2017">
+            <br>
+            <div class="work-content">
+                <div class="work-text">
+                    <h3>
+                        Cairn: 4D-Seismic
+                    </h3>
+                    <p><br>
+                        Mr. Harsh Vardhan <br>
+                        Mr. Bhavesh Chandra Jha <br>
+                        Ms. Namita Pahwa<br>
+                    </p>
+                </div>
+                <div class="work-img"><img src="img/workshop.jpg" height="50%" width="100%"></div>
+            </div>
+            <br>
+            <div class="work-content">
+                <div class="work-text">
+                    <h3>
+                        Atomic Mineral Directorate(AMD): Prospects Of Atomic Energy
+                    </h3>
+                    <p><br>
+                        Mr. M.K. Sandilya <br>
+                        Mr. Yogesh Adhikari
+                    </p>
+                </div>
+                <div class="work-img"><img src="img/workshop.jpg" height="50%" width="100%"></div>
+            </div>
+
+        </section>
+        <section id="tab2" title="Workshop: 2016">
+            <br>
+            <div class="work-content">
+                <div class="work-text">
+                    <h3>
+                        ONGC: Overview of NELP scenario, onland exploration & addressing environment concern
+                    </h3>
+                    <p><br>
+                        <b>Sh. Subhajit Brahma-</b> Deputy General Manager (Geology)<br>
+                        <b>Sh. Debashis Chakraborty-</b> Deputy General Manager (Geology), ONGC, Kolkata
+                    </p>
+                </div>
+                <div class="work-img"><img src="img/workshop.jpg" height="50%" width="100%"></div>
+            </div>
+            <br>
+            <div class="work-content">
+                <div class="work-text">
+                    <h3>
+                        Geovale: An Integral Approach To Solve The Puzzles Of Geoscience
+                    </h3>
+                    <p>
+                        <b>Geology</b>- Structural, Sedimentology (Reservoir sedimentology, sequence stratigraphy), and
+                        Energy sector. Why they are so necessary to understand? What are the limitations?<br>
+                        <b>Subtopics:<br>
+                            Geophysics</b>- Petrophysics, Survey methods, Processing and Interpretation of Seismic.
+                        Detail discussion about petrophysics, well logs, seismic. Methods and utility? Limitations.<br>
+                        <b>Why integration–</b> Geology + Geophysics = Geoscience; Procedures and techniques, numerous
+                        examples.<br>
+                        <b>Case studies–</b> Mineral Exploration and Resource Modelling / Geovale’s Approach/Current
+                        Projects. Demonstration of integration of geology and geophysics for coal exploration projects
+                        in India and Abroad.<br>
+                        <b>Case studies–</b> Hydrocarbon exploration and Reservoir Modelling. Number of case studies to
+                        demonstrate the power of integration– field + analogue study+ petrophysics + seismic + velocity
+                        modelling + paleoenvironment + prospect & play concepts.<br>
+                        Modern day tools and software– is it necessary? – Softwares for mining and hydrocarbon
+                        modelling. Brief idea about modelling processes.
+                        <b>Conclusions<br>
+                            Note:</b> Pre questions will be asked on the subtopics during the workshop and it will be a
+                        good chance to grab some goodies.
+                    </p>
+                </div>
+                <div class="work-img"><img src="img/workshop.jpg" height="50%" width="100%"></div>
+            </div>
+        </section>
+        <section id="tab3" title="Workshop: 2015">
+            <br>
+            <div class="work-content">
+                <div class="work-text">
+                    <h3>
+                        Core Analysis
+                    </h3>
+                    <p>
+                    </p>
+                </div>
+                <div class="work-img"><img src="img/workshop.jpg" height="50%" width="100%"></div>
+            </div>
+            <br>
+            <div class="work-content">
+                <div class="work-text">
+                    <h3>
+                        Indian Upstream exploration and Seismic Interpretation
+                    </h3>
+                    <p>
+                        <b>Mr. Amitabha Sengupta</b> - Deputy General Manager (Geology), ONGC Kolkata & Basin manager
+                        Andaman<br>
+                        <b>Mr. Subrata Gangopadhyay</b> - Superintending Geophysicist ONGC,Kolkata
+                    </p>
+                </div>
+                <div class="work-img"><img src="img/workshop.jpg" height="50%" width="100%"></div>
+            </div>
+        </section>
+        <section id="tab4" title="Workshop: 2014">
+            <br>
+            <div class="work-content">
+                <div class="work-text">
+                    <h3>
+                        Drilling Operations and Well Logging in Oil and Gas Exploration
+                    </h3>
+                    <p>
+                        Geological and petrophysical interpretation stands as an integral part of oil and gas
+                        exploration.<br>
+
+                        GeoLogix is a software company focused on providing innovative and reliable solutions for well
+                        monitoring. It has served the international oil and gas exploration industry since its inception
+                        in 1994. It has globally distributed team of geoscientists, engineers and software developers
+                        who provide systems, tools and solutions which efficiently turn your well data into secure
+                        easily shared information.<br>
+
+                        <b>SubTopics:-</b><br>
+                        -Well log / Data interpretation in Oil Industry<br>
+                        -Real Time data monitoring and study<br>
+                        -Role of Service provider
+                    </p>
+                </div>
+                <div class="work-img"><img src="img/workshop.jpg" height="50%" width="100%"></div>
+            </div>
+            <br>
+            <div class="work-content">
+                <div class="work-text">
+                    <h3>
+                        Mineral Exploration
+                    </h3>
+                    <p>
+                        The event is designed to provide students a glimpse of the mineral exploration industry and to
+                        give them a practical and business perspective of mineral exploration not generally available in
+                        the classroom. Our country is a world leader in mineral exploration. This workshop is an attempt
+                        to encourage the highly qualified young students to enter the industry with a perspective of
+                        retaining our position in the leading mineral economy of the country in the future. The motto
+                        behind this production is to prepare a platform for the future Geoscientists in Mineral
+                        Exploration.<br>
+
+                        Geovale team comprises engineers, geo-scientists, analysts, mineral processing engineers,
+                        environmental and social scientists and health and safety management professionals who have an
+                        average of twenty years of field and consulting experience. Team members have been associated
+                        with reputed organisations such as Rio Tinto, Tata Steel, Reliance Industries, Essar, JSW,
+                        Geological Survey of India, Oil and Natural Gas Corporation and Australian-Indian Resources and
+                        as consultants, provided services to top global mining companies for various commodities across
+                        all continents.<br>
+
+                        <b>SubTopics:-</b><br>
+                        1. Deep-ocean mineral deposits as a source of critical metals for high- and green-technology
+                        applications: Comparison with land-based resources.<br>
+                        2. Impact of iron-reducing bacteria on the properties of argillites in the context of
+                        radioactive waste geological disposal.<br>
+                        3. Heavy mineral sands<br>
+                        4. Thermoluminescence as a tool in uranium exploration<br>
+                        5. Coal pillar strength estimation
+                    </p>
+                </div>
+                <div class="work-img"><img src="img/workshop.jpg" height="50%" width="100%"></div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="footer">
+    <div style="text-align: center">Follow Us On:<br>
+        <a href="https://www.facebook.com/prithvi.iitkgp"><i class="fa fa-facebook mr-5"
+                                                             style="font-size:25px;"></i></a>
+        <a href="https://twitter.com/Prithvi_IIT_kgp"><i class="fa fa-twitter mr-5" style="font-size:25px;"></i></a>
+        <a href="http://www.youtube.com/channel/UCF0rHzKhLx4N6OkaqTnJ8pQ?feature=watch"><i class="fa fa-youtube"
+                                                                                           style="font-size:25px;"></i></a>
+    </div>
+    <!--Website Credit: <a href="https://www.facebook.com/abhinav.saini.507">Abhinav Saini</a>-->
+</div>
+<script src="workshop/js/index.js"></script>
+
+</body>
+</html>

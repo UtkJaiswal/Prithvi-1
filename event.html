@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prithvi 2018| Events</title>
+    <link rel="shortcut icon"
+          href="http://www.prithvi-geo.in/prithvi17/images/xprithvi-icon.png.pagespeed.ic.rhggCfOJMM.webp"
+          type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/jquery-2.1.1.js'></script>
+    <style type="text/css">
+
+        .hovering a {
+            display: block;
+            text-decoration: none;
+            margin: 0 0px;
+            position: relative;
+            transition: all .5s;
+        }
+
+        .hovering a:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            content: ' ';
+            color: transparent;
+            background: white;
+            height: 1px;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .hovering a:hover {
+            color: #fff;
+            z-index: 1;
+        }
+
+        .hovering a:hover:after {
+            z-index: -10;
+            animation: fill 1s forwards;
+            opacity: 1;
+        }
+
+        @-webkit-keyframes fill {
+            0% {
+                width: 0;
+                height: 1px;
+            }
+            100% {
+                width: 100%;
+                height: 1px;
+            }
+        }
+
+        .pic-wrapper {
+            position: absolute;
+            top: -1%;
+            width: 100%;
+            height: 101vh;
+            overflow: hidden;
+        }
+
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            animation: slideShow 32s linear infinite 0s;
+            -webkit-animation: slideShow 32s linear infinite 0s;
+        }
+
+        .pic-1 {
+            opacity: 0.3;
+            background: url(home/img/home4.jpg) no-repeat center top fixed;
+            background-size: cover;
+        }
+
+        .pic-2 {
+            animation-delay: 8s;
+            background: url(home/img/home2.jpg) no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .pic-3 {
+            animation-delay: 16s;
+            background: url(home/img/home1.jpg) no-repeat center top fixed;
+            background-size: cover;
+        }
+
+        .pic-4 {
+            animation-delay: 24s;
+            background: url(img/background23.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        @keyframes slideShow {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            5% {
+                opacity: 0.4;
+            }
+            25% {
+                opacity: 0.4;
+            }
+            30% {
+                opacity: 0;
+                transform: scale(1.3);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+
+        .extra {
+            display: none;
+        }
+
+        .extra-one {
+            display: block;
+        }
+
+        .collapse.show {
+            height: 94vh;
+            overflow: auto;
+        }
+
+        @media only screen
+        and (orientation: landscape) {
+            .collapse.show {
+                height: 90vh;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .full-screen {
+                height: 94vh;
+            }
+
+            .full-screen a {
+                font-size: 3.25em;
+            }
+
+            .nav-size {
+                width: 95vw;
+                background-color: black;
+            }
+
+            .navbar-light {
+                text-align: center;
+            }
+
+            .navbar-brand {
+                height: 60px;
+            }
+
+            #nav-position {
+                position: absolute;
+                height: 96vh;
+            }
+
+            #img-show {
+                display: none;
+            }
+
+            #nav-home {
+                display: block !important;
+            }
+
+            #extra-hr {
+                display: none;
+            }
+
+            .extra {
+                display: block;
+            }
+
+            .extra-one {
+                display: none;
+            }
+        }
+
+        #nav-home {
+            display: none;
+        }
+
+        .right-hover {
+            position: absolute;
+            right: 0px;
+            height: 4vw;
+            width: 4vw;
+            z-index: 5;
+            -webkit-transition: all 0.75s; /* Safari */
+            transition: all 0.75s;
+        }
+
+        .right-hover:hover {
+            height: 5vw;
+            width: 5vw;
+        }
+
+    </style>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $(".se-pre-con").remove();
+        });
+
+    </script>
+</head>
+
+<body>
+<div class="se-pre-con"></div>
+<div class="pic-wrapper">
+    <div class="back pic-1">
+    </div>
+    <div class="back pic-2">
+    </div>
+    <div class="back pic-3">
+    </div>
+    <div class="back pic-4">
+    </div>
+</div>
+<a href="https://www.facebook.com/prithvi.iitkgp"><img src="img/fb.png" class="right-hover" style="top: 35vh;"></a>
+<a href="https://twitter.com/Prithvi_IIT_kgp"><img src="img/twitter.png" class="right-hover" style="top: 45vh;"></a>
+<a href="http://www.youtube.com/channel/UCF0rHzKhLx4N6OkaqTnJ8pQ?feature=watch"><img src="img/youtube.png"
+                                                                                     class="right-hover"
+                                                                                     style="top: 55vh;"></a>
+<div class="overallcontainer">
+    <div class="normal-top-navbar">
+        <nav class="navbar navbar-light " id="nav-position">
+            <nav class="navbar navbar-toggleable-md navbar-nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="home.html" id="img-show"><img src="img/prithvi1.png" height="35px"
+                                                                            width="100px"></a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-0 mt-2 mt-lg-0 normal-right nav-size full-screen">
+                        <li class="nav-item mr-5 hovering" id="nav-home">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="home.html#section2">About Us</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link normal-active" href="#">Events</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering extra">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item hovering extra">
+                            <a class="nav-link mr-5" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item hovering extra">
+                            <a class="nav-link mr-5" href="workshop.html">Workshop</a>
+                        </li>
+                        <li class="nav-item hovering extra">
+                            <a class="nav-link mr-5" href="seminar.html">Seminars</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="contact.html">Our Team</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="spons.html">Sponsors</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                    </ul>
+                    <hr id="extra-hr">
+                </div>
+            </nav>
+        </nav>
+        <hr id="normal-top-hr"/>
+    </div>
+    <div class="normal-text">
+        <h2 class="heading">Events</h2>
+        <hr style="width: 82vw; margin-left: -3vw;">
+        <div class="event-text outer-tab-block">
+            <ul class="navbar-nav outer-tab-menu">
+                <li class="nav-item normal-active">
+                    <a class="nav-link" href="#">Case Study</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Explique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Geoclick</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Geomodelling</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Geospectrum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gridnite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Indiana Geones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Minrex</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Online Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Poster Presentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terra Wars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Words of Wisdom</a>
+                </li>
+            </ul>
+            <div class="outer-tab-content">
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p>
+                                    It is well said that there is no substitute for improvisation and innovation, the
+                                    oil and gas sector is in dire need to ignite and fuel the curiosity of younger minds
+                                    to become a part of the sector. This event aims at testing the fundamentals of the
+                                    participants. Participants will get to apply their knowledge on an actual case study
+                                    from the industry and showcase their analytical and thinking skills. The basic aim
+                                    is to encourage students to think out of the box and provide dynamic solutions to
+                                    the problems faced by the industries. Boasting an elaborate and unique format, this
+                                    prestigious event provides participants with an unparalleled mental exercise.
+                                    Formulation of action-oriented recommendations to real-world problem is not for the
+                                    faint hearted! Showcase your decision making and problem solving attitude to win
+                                    handsome prize money!!
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <ol>
+                                        <li>
+                                            A team of minimum 2 and a maximum of 4 students is allowed.
+                                        </li>
+                                        <li>
+                                            Students from different universities can collaborate to form a single team.
+                                        </li>
+                                        <li>
+                                            Only one entry allowed per team.
+                                        </li>
+                                        <li>
+                                            The Event will be conducted in Two rounds :-
+                                        </li>
+                                    </ol>
+                                    <br>
+                                    <b>Round-1(Abstract Submission):</b><br>
+                                    An Abstract will be submitted by all the teams.<br>
+                                    The abstract should contain the basic idea of the proposed solution (in .pdf or .doc
+                                    format).<br>
+                                    Based on the submission teams will be shortlisted for round 2.<br>
+                                    <b>Round-2(Presentation):</b><br>
+                                    This round will be conducted in IIT KGP.<br>
+                                    The selected teams will make a PowerPoint presentation containing a detailed
+                                    solution.<br>
+                                    10 minutes will be provided for Presenting the solution and 5 minutes for
+                                    questionnaire<br>
+                                    <ol>
+                                        <li>
+                                            Teams which are not present for their presentation will be disqualified.
+                                        </li>
+                                        <li>
+                                            Every Participant must be registered on our web page, failing to do so will
+                                            lead to disqualification.
+                                        </li>
+                                        <!-- 												<li>
+                                                                                            Send your abstract to mukesh@prithvi-geo.in
+                                                                                        </li> -->
+                                    </ol>
+
+                                </div>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p>
+                                    <b>"Minds are like parachutes, they work best when open"</b><br>
+                                    Get your grey cells to work with explique. With Prithvi’18 we provide you a platform
+                                    to present your views/understanding on the listed topics. Mesmerize the audience
+                                    with the presentation of your idea on the mentioned topic.<br>
+                                <div class="inner-tab-pane-left"><br>
+                                    What you can present?
+                                    <ol>
+                                        <li>
+                                            Present your own project/ research work/understanding related to the given
+                                            topic.
+                                        </li>
+                                        <li>
+                                            Scrutinize the given topic; look for problems and solutions, and various
+                                            advancements in that field.
+                                        </li>
+                                    </ol>
+                                    You can take help from different material available on the internet. Plagiarism will
+                                    lead to disqualification.
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <ol>
+                                        <li>
+                                            Maximum team size is 3. Minimum is 2.
+                                        </li>
+                                        <li>
+                                            The event consists of two rounds – prelims and final.
+                                            <!-- Submit your abstract for prelims to explique@prithvi-geo.in. -->
+                                        </li>
+                                        <li>
+                                            Format of the abstract file should be in .pdf
+                                        </li>
+                                        <li>
+                                            Plagiarism is strictly discouraged. Any participant found indulging in such
+                                            methods would be immediately disqualified.
+                                        </li>
+                                        <li>
+                                            Teams selected after prelims will be allowed in the final round for
+                                            presentation during Prithvi’18
+                                        </li>
+                                        <li>
+                                            Presentations should be in English. Use PPT only.
+                                        </li>
+                                        <li>
+                                            Presentations will be of the (5+2) pattern where the first 5 minutes will be
+                                            for presenting your idea and the next 2 minutes will be an open house
+                                            question answer session.
+                                        </li>
+                                        <li>
+                                            Judging will be done based on the idea, clarity of presentation and Q&A
+                                            session.
+                                        </li>
+                                        <li>
+                                            Decision of the judges will be final and binding.
+                                        </li>
+                                    </ol>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>3rd prize- Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                            <li>
+                                <a>Example</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p>
+                                    Every Geoscience student is passionate to capture the peerless beauty of Mother
+                                    Earth. We all love to present our creative side by clicking some amazing scenic
+                                    beauty. Prithvi 2018 will help you in showcasing these pictures, through an online
+                                    event on social media. We will display your pictures from field, excursion or any
+                                    trip that has significant geological and natural radiance. Based on public response,
+                                    the winning photographer will be awarded a cash prize and the pictures will be
+                                    displayed during Prithvi inauguration.
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <ol>
+                                        <li>
+                                            An individual is allowed to send just one photograph.
+                                            <!-- Send your entries at aaditya@prithvi-geo.in -->
+                                        </li>
+
+                                        <li>
+                                            Please do send the photograph with your details (including your Name,
+                                            College, Registration ID), photograph location and an apt caption. Do send
+                                            us your facebook timeline link to get yourself tagged with your photograph
+                                            on our facebook page.
+                                        </li>
+
+                                        <li>You can share picture of geological features, field image of natural beauty
+                                            but it should be original.
+                                        </li>
+
+                                        <li>Photos can be edited but only to a limited extent. Excessive editing will
+                                            lead to disqualification.
+                                        </li>
+
+                                        <li>Copying from internet or any such malpractice will lead to
+                                            disqualification.
+                                        </li>
+
+                                        <li>Unnecessary writing on photograph will lead to disqualification but one can
+                                            use markers( oval,curves) to mark any feature and number it on the
+                                            photograph and put up an index against the numbers to describe the features.
+                                            This description will be put up in the image description part.
+                                        </li>
+
+                                        <li>Number of likes and shares received till particular date(will be updated
+                                            soon) would only be considered. Higher weightage will be given to number of
+                                            shares. Discretion of Team Prithvi is final in this matter.
+                                        </li>
+
+                                        <li>Prizes will be given to those participants only who are present during
+                                            Prithvi'18. No request for dispatch through courier/money order will be
+                                            entertained.
+                                        </li>
+
+                                        <li>Team Prithvi has right to share the photograph on any platform.</li>
+                                    </ol>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>Will be updated soon</li>
+                                    <!-- <li>Prizes worth Rs 2000 to be won.</li> -->
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                    <img src="img/geoclick2.jpg" style="height: 50%; width: 40%;">
+                                    <img src="img/geoclick3.jpg" style="height: 60%; width: 44%;">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p>Light up your brain and bring out the imaginative and creative skills that is hidden
+                                    in you, to build up a 3D model. Geo-modelling provides you a platform to represent
+                                    surface/subsurface geological processes occurring in the earth system in the form of
+                                    3 D model . So gear up your skills and get ready to play with your innovative
+                                    ideas!</p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <div class="inner-tab-pane-left">
+
+                                    <p>Problem Statement:- Participating team need to present a working model. Model can
+                                        depict a geological / geophysical / petroleum setting or phenomenon.
+                                        Participants can also present a 3D design of model on any software.<br>
+                                    <ul>
+                                        <li> Each team cannot have more than 5 members.</li>
+                                        <!-- <li> Team must submit an abstract about their model to geomodelling@prithvi-geo.in before the deadline.</li> -->
+                                        <li> Participants must give a small description of presented model at the time
+                                            of the competition. There can be questions from the viewer side also and
+                                            answer of those questions will be get counted in team performance.
+                                        </li>
+                                        <li> The model must be a Working model.</li>
+                                        <li> Any material can be employed for construction of the model.</li>
+                                    </ul>
+                                    <br>
+                                    Last date of submission of abstract /model description will be updated soon.<br>
+                                    Disclaimer- PRITHVI has a right to make changes in the rules and regulation. No
+                                    objection will be entertained on the decision of judges.</p>
+                                </div>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p>"You know more than you think you know, just as you know less than you want to know.”
+                                    Geo-spectrum is a Quiz competition which will test the participant’s quizzing
+                                    aptitude on a broad spectrum of subjects of Earth Science. It is a team event.
+                                    Though the major emphasis will be on exploration, it will touch many other facets of
+                                    Geo – Sciences in a very interesting format. It will be conducted in two rounds. The
+                                    first round will be a written test consisting of multiple choice questions. Top
+                                    scoring teams in round one will proceed to next stage comprising of oral questions
+                                    including audio and visual rounds.</p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    Geo Spectrum will be conducted during Prithvi 2018. It will consist of a Preliminary
+                                    Round followed by a Final Round.<br>
+                                    Team Size: 2-4<br>
+
+                                    Preliminary round :-<br>
+                                    <ol>
+                                        <li>Register yourself for the event in a group of 2 to 4.</li>
+                                        <li> There will be a written MCQ round of 60 minutes duration.</li>
+                                        <li> Top 6 teams will be chosen for the final round of the GeoSpectrum.</li>
+                                    </ol>
+                                    Final round:-<br>
+                                    Answer it-Pass on (round one):-<br>
+                                    <ol>
+                                        <li> Each team will be asked 3 questions .</li>
+                                        <li> If the team answers the question correctly, they will be awarded 10
+                                            points.
+                                        </li>
+                                        <li> If the team concerned fails to answer ,the question will be passed onto the
+                                            next team.
+                                        </li>
+                                    </ol>
+
+                                    Rapid Fire(round two):-<br>
+                                    <ol>
+                                        <li> Each team will be given two minutes and they can answer as many questions
+                                            as they can.
+                                        </li>
+                                        <li> Each question carries 10 points.</li>
+                                        <li> They can switch over to the next question if they fail to answer.</li>
+                                    </ol>
+                                    Audio Visual (round three):-<br>
+                                    <ol>
+                                        <li> Audio – Visual Questions will be asked.</li>
+                                        <li> Each question will carry 20 marks.</li>
+                                        <li> Questions will not pass on.</li>
+                                        <li> There will be negative marking of 10 marks for any wrong answer.</li>
+                                    </ol>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p><b>Why do I love thee, O Night?</b><br>
+                                    Because you know I will never answer.<br>
+                                    -Vera Nazarian<br>
+
+                                    Cannot fathom what to do with your wandering brain during the night?<br>
+                                    Grid-nite offers you a challenging as well as a fun experience to keep yourself
+                                    occupied. It's an over night event where participants will be given the grid the
+                                    evening before and the answers will be collected the following morning. It involves
+                                    creativity as well as presence of mind.<br>
+                                    Participants will be provided with a grid which will carry words related to Earth
+                                    Sciences. They have to solve the grid and find as many words as they can. Sounds
+                                    easy, doesn't it? <br>
+                                    Here's a twist - The competition isn't about finding the maximum number of words
+                                    from the grid, it's about creating as many geologically meaningful sentences using
+                                    these keywords.</p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <ol>
+                                        <li> Participants will be provided with a grid which contains specific words in
+                                            the evening.
+                                        </li>
+                                        <li> The participants have to write all the words they were able to seek from
+                                            the grid.
+                                        </li>
+                                    </ol>
+                                    After collecting these words, the participants have to go a step further and create
+                                    *geologically meaningful* sentences and underline the used keyword from the grid and
+                                    submit the final sentences and words the next morning.<br>
+
+                                    <b>Marking scheme -</b><br>
+                                    <ol>
+                                        <li> The number of letters in each word equals to a single point. For instance,
+                                            Dyke gets you 4 points and fault gets you 5 points.
+                                        </li>
+                                        <li> Overall score is calculated in the following way -</li>
+                                    </ol>
+                                    Example - The words acquired from the grid are rock and magma.</br>
+                                    Sentence 1. *Rocks* are beautiful. ( 0 points, No geological meaning)<br>
+                                    Sentence 2. *Magma* is solid. (0 points, no geological significance)<br>
+                                    Sentence 3. *Rocks* are found beneath the earth's surface ( 5 + 1 points, makes
+                                    sense, used 1 word from the grid)<br>
+                                    Sentence 4. *Magma* has a very high temperature. (5 + 1 points, makes sense, used 1
+                                    word from the grid)<br>
+                                    Sentence 5. *Rocks* are obtained from cooling of *magma*. (10 + 2 points, makes
+                                    sense, used 2 words in the same sentence from the grid)<br>
+
+                                    Note - The participants are allowed to use singular / plural form of these words
+                                    wherever they find it adequate.<br>
+                                    Example - The words obtained from the grid are mineral and sediment.<br>
+                                    The following words will be legal - minerals and sediments.<br><br>
+
+                                    P.S. - No extra points for an extra S.<br>
+                                    P.P.S. - Plagiarism of any kind will be severely punished. ( 0 points will be given
+                                    to each team with the same sentence )
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p><b>"The cave you fear to enter holds the treasure you seek."</b>
+                                    Have the zeal to hunt the things in field of Earth Science that make you different
+                                    and unique. Prithvi’18 presents a platform for our budding geoscientist who seeks
+                                    there future in field of Exploration. The task involves using geophysical
+                                    prospecting methods to locate objects whose expected properties are known. Design of
+                                    the survey and its execution is the challenge. Equipment will be provided.
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <ol>
+                                        <li> Internet/Wi-fi usage is strictly prohibited during the event.</li>
+                                        <li>Complete care should be taken while handling the instruments.</li>
+                                        <li> Participants must bring Laptops with required software installed for
+                                            prospecting like MATLAB and SURF.
+                                        </li>
+                                        <li> Problem statement along with field setup with necessary instruments for
+                                            prospecting will be provided by our team during the event.
+                                        </li>
+                                    </ol>
+
+
+                                    <b>Team Size</b><br>
+                                    Maximum 3 members.<br>
+                                    <b>Judging Criteria</b><br>
+                                    Best solution based on the accuracy of readings and its interpretation provided
+                                    technically, keeping the track of time by the the team will be taken into
+                                    consideration for declaring the winners.
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p>The identification of Rocks and minerals are key attributes of a good earth
+                                    scientist. But this event requires to have a much broader perspective of hand
+                                    specimens. Therefore Palaeontology has been clubbed with Mineralogy to give MINREX.
+                                    Hand specimen identification involves immaculate eyes, thorough knowledge and mind
+                                    of a hawk. It is not easy to instantly recognise every rock type and mineral,
+                                    instead proper identification is achieved by a systematic querying of its
+                                    properties. It’s It’s time to churn up your gray cell as prithvi-18 brings you a
+                                    platform that would test your geological skills to the brink and push your mind to
+                                    the edge of its capacity. So, if you think mineral and fossil identification is your
+                                    fortitude, then it’s time for your Knowledge under the sword of MINREX.
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <b>Instruction</b><br>
+                                    <ol>
+                                        <li> Maximum team size is 4.</li>
+                                        <li> The event consists of two rounds – prelims and final.</li>
+                                        <li> The prelims will be a test of your knowledge of Crystallography , Optical
+                                            Mineralogy and Palaeontology. It will contain MCQ questions.
+                                        </li>
+                                        <br>
+                                        The final round would be based on rock and mineral identification along with
+                                        some index fossils' identification and the rules will be disclosed on the venue
+                                        itself.<br>
+                                        <li> Top 5 teams with maximum score will be shortlisted for the finals.
+                                        <li> The finals will be a challenging experience for you to maneuver the
+                                            minerals, rock samples and some basic fossils through the various properties
+                                            observing the streak, hardness, lustre, cleavages and other physical
+                                            properties as well as to see the minerals in depth. In the context of
+                                            fossils you will be required to identify some simple characteristics of the
+                                            given fossils. A combination of these two is sure to complete a proper sweep
+                                            of the student’s identification skills in all authenticity.
+                                        </li>
+                                    </ol>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p>Is quizzing your forte? If yes, Prithvi brings you a platform to check on your Earth
+                                    science knowledge. Also it is handy to those aspiring for competitive examinations.
+                                    So before appearing for the next competitive exam or class test, measure your
+                                    aptitude with our Online Quiz designed exclusively for you.</p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <ol>
+                                        <li> The event is open to all. The quiz will be hosted by our online quiz
+                                            partner. The quiz session will be open from 7pm to 6pm next day.
+                                        </li>
+                                        <li> There will be a series of 3 independent daily quizzes.</li>
+                                        <li> The quiz comprises of a total of 30 multiple choice or true & false
+                                            questions.
+                                        </li>
+                                        <li> The maximum time limit for the quiz is 25 min.</li>
+                                        <li> Results will be announced on website and Facebook page of Prithvi
+                                            (https://www.facebook.com/prithvi.iitkgp).
+                                        </li>
+                                        <li> Multiple submission from individual participant is not allowed. If such a
+                                            case is reported the participant will be disqualified.
+                                        </li>
+                                        <li> The decision of the Prithvi Team shall be final and binding for all the
+                                            participants and no further questions on results will be entertained.
+                                        </li>
+                                    </ol>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>Will be updated soon</li>
+                                    <!-- <li>Gift coupons worth Rs3000 to be won.</li> -->
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p><b>Scientific Paper Presentation, The Platform for presenting research</b><br>
+                                    Making Posters is the best way to convey information about a topic. Prithvi provides
+                                    you a platform to present your research. Poster Presentation will require submission
+                                    of poster on recently published papers or on-going research /projects in the field
+                                    of Geoscience.<br>
+
+                                    For Poster presentation, you can choose ANY topic related to Geoscience. <br>
+                                    In the past, we had submissions from participants on varied topics ranging from
+                                    unconventional hydrocarbons, plate tectonics, structural, stratigraphical and
+                                    geo-chemical modelling to seismic analysis, near surface geophysics etc. Note that
+                                    above topics are for giving example only. You are free to choose any topic but it
+                                    should have direct or indirect relationship with Geosciences.</p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <b>Event Structure</b><br>
+                                    Event will be organised in two phases.<br>
+                                    Round 1 : Date of online submission of abstract will be updated soon. <br>
+                                    Round 2: Selected teams from round 1 will present their work during prithvi-2018<br>
+                                    Selected teams should bring the poster with them for the presentation. The poster
+                                    should strictly adhere to the guidelines mentioned below.<br>
+                                    *Participants are requested to bring poster printed on flex, we will not provide
+                                    printing facility.<br>
+
+                                    <b>Instructions</b><br>
+                                    <ol>
+                                        <li> A team can comprise maximum three participants.</li>
+                                        <!-- <li> Send your abstract to poster-presentation@prithvi-geo.in</li> -->
+                                        <li> There is no word limit.</li>
+                                        <li> Top 3 teams would get merit certificate.</li>
+                                        <li> Decision of judge’s would be final.</li>
+                                    </ol>
+                                    <b>Poster Presentation</b><br>
+                                    <ol>
+                                        <li> All material must be accessible without having to lift or turn pages.</li>
+                                        <li> All materials should be placed within the assigned display area.</li>
+                                        <li> Time allotted for the poster will be 15 minutes(10 minutes for presentation
+                                            and 5 minutes for queries, if any by the judges).
+                                        </li>
+                                    </ol>
+                                    <b>Poster Format:</b><br>
+                                    <ol>
+                                        <li>Your poster must not exceed 48 inches in height or 42 in inches width. (A0
+                                            is most preferable )
+                                        </li>
+                                        <li> Name of the presenter and the institution are not to be displayed during
+                                            competition but may be mentioned before presenting and while announcing the
+                                            result.
+                                        </li>
+                                    </ol>
+                                    <br>
+                                    Any kind of arguments or misbehaviour may lead to disqualification of the team.
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p>Terra wars is a battle to be fought on Google Earth grounds. The side with the
+                                    brightest minds of geologists shall survive and win the combat. So come and test
+                                    your Mathematical skills applied in Geological fields and experience the epic
+                                    results. The question paper will contain 2 sets: one containing multiple choice
+                                    questions on structural geology and other set of questions will be solved using
+                                    google earth platform. The time limit of the event is 1 hour.</p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    <ol>
+                                        <li> This will be a team event with each team comprising of 2-4 members.</li>
+                                        <li><b> Participants must bring Laptops with required software installed like
+                                            google earth.</b></li>
+                                        <li> The teams need to have a good network connection along with power backup as
+                                            to download files as required.
+                                        </li>
+                                        <li> A participant cannot take part in multiple teams.</li>
+                                    </ol>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-tab-pane">
+                    <div class="inner-tab-block">
+                        <ul class="inner-tab-menu">
+                            <li class="normal-active">
+                                <a>Info</a>
+                            </li>
+                            <li>
+                                <a>Rules</a>
+                            </li>
+                            <li>
+                                <a>Prizes</a>
+                            </li>
+                            <li>
+                                <a>Contact</a>
+                            </li>
+                        </ul>
+                        <div class="inner-tab-content">
+                            <div class="inner-tab-pane">
+                                <p><b>“I don't pretend to know everything; I just only speak on matters I know I'll
+                                    win.”</b><br>
+                                    ― Criss Jami
+                                    <br><br>
+                                    An interest in geology and a will to speak , this is all it needs. For all the
+                                    wordsmiths out there, this event is just for you. Participants will be given topics
+                                    related to geology on which they will have to write an article. After this the
+                                    shortlisted participants will be given another topic during PRITHVI’18 and one day
+                                    time to prepare a speech. Final judgement will be made on 3 factors: content,
+                                    understanding of the topic and elocution.</p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <div class="inner-tab-pane-left">
+                                    FIRST ROUND:<br>
+                                    <ol>
+                                        <li> Submit article on any one of these topics -</li>
+                                        <ol style="list-style-type: lower-latin;">
+                                            <li> Seven new exoplanets - life beyond our realms.</li>
+                                            <li> Mineral exploration techniques and methodologies.</li>
+                                            <li> Most recent oil crises-causes & effects.</li>
+                                        </ol>
+                                        <li> Article word limit for first round will be 270-300 words.</li>
+                                        <li> Selected participants from first round will be move to the second round.
+                                        </li>
+                                        <li> Submission date will be updated soon.</li>
+                                    </ol>
+
+                                    SECOND ROUND:<br>
+                                    <ol>
+                                        <li> Second Round topic will be same as first round.</li>
+                                        <li> Participants will have to prepare a speech of about 3-4 mins exceeding
+                                            which penalty will be awarded.
+                                        </li>
+                                        <li> Judgement will be based on content, elocution and understanding of the
+                                            topic.
+                                        </li>
+                                        <li> Participants will have to answer a question from the judge or other
+                                            participants
+                                            after his/her speech.Language used throughout the event will be English.
+                                        </li>
+                                    </ol>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>
+                                <ul style="list-style: none;">
+                                    <li>1st prize- Will be updated soon</li>
+                                    <li>2nd prize- Will be updated soon</li>
+                                    <li>3rd prize - Will be updated soon</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="inner-tab-pane">
+                                <p>Will be updated soon
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="normal-bottom-navbar extra-one">
+        <hr id="normal-bottom-hr">
+        <nav class="navbar navbar-light">
+            <nav class="navbar navbar-toggleable-md navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-size">
+
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item hovering">
+                            <a class="nav-link mr-5" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item hovering">
+                            <a class="nav-link mr-5" href="workshop.html">Workshop</a>
+                        </li>
+                        <li class="nav-item hovering">
+                            <a class="nav-link mr-5" href="seminar.html">Seminars</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </div>
+</div>
+
+<script src="js/event.js"></script>
+
+</body>
+</html>

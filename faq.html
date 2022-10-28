@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prithvi 2018| FAQ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="faq/css/style.css">
+    <link rel="shortcut icon"
+          href="http://www.prithvi-geo.in/prithvi17/images/xprithvi-icon.png.pagespeed.ic.rhggCfOJMM.webp"
+          type="image/png">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> <!-- CSS reset -->
+    <style type="text/css">
+        .hovering a {
+            display: block;
+            text-decoration: none;
+            margin: 0 0px;
+            position: relative;
+            transition: all .5s;
+        }
+
+        .hovering a:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            content: ' ';
+            color: transparent;
+            background: white;
+            height: 1px;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .hovering a:hover {
+            color: #fff;
+            z-index: 1;
+        }
+
+        .hovering a:hover:after {
+            z-index: -10;
+            animation: fill 1s forwards;
+            opacity: 1;
+        }
+
+        @-webkit-keyframes fill {
+            0% {
+                width: 0;
+                height: 1px;
+            }
+            100% {
+                width: 100%;
+                height: 1px;
+            }
+        }
+
+        .pic-wrapper {
+            position: absolute;
+            top: -1%;
+            width: 100%;
+            height: 101vh;
+            overflow: hidden;
+        }
+
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            animation: slideShow 32s linear infinite 0s;
+            -webkit-animation: slideShow 32s linear infinite 0s;
+        }
+
+        .pic-1 {
+            opacity: 0.3;
+            background: url(home/img/home4.jpg) no-repeat center top fixed;
+            background-size: cover;
+        }
+
+        .pic-2 {
+            animation-delay: 8s;
+            background: url(home/img/home2.jpg) no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .pic-3 {
+            animation-delay: 16s;
+            background: url(home/img/home1.jpg) no-repeat center top fixed;
+            background-size: cover;
+        }
+
+        .pic-4 {
+            animation-delay: 24s;
+            background: url(img/background23.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        @keyframes slideShow {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            5% {
+                opacity: 0.4;
+            }
+            25% {
+                opacity: 0.4;
+            }
+            30% {
+                opacity: 0;
+                transform: scale(1.3);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+
+        .extra {
+            display: none;
+        }
+
+        .extra-one {
+            display: block;
+        }
+
+        .collapse.show {
+            height: 94vh;
+            overflow: auto;
+        }
+
+        @media only screen
+        and (orientation: landscape) {
+            .collapse.show {
+                height: 90vh;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .full-screen {
+                height: 94vh;
+            }
+
+            .full-screen a {
+                font-size: 3.25em;
+            }
+
+            .nav-size {
+                width: 95vw;
+                background-color: black;
+            }
+
+            .navbar-light {
+                text-align: center;
+            }
+
+            .navbar-brand {
+                height: 60px;
+            }
+
+            #img-size {
+                height: 60px;
+                width: 160px;
+            }
+
+            #nav-position {
+                position: absolute;
+                height: 96vh;
+            }
+
+            #img-show {
+                display: none;
+            }
+
+            #nav-home {
+                display: block !important;
+            }
+
+            #extra-hr {
+                display: none;
+            }
+
+            .extra {
+                display: block;
+            }
+
+            .extra-one {
+                display: none;
+            }
+        }
+
+        #nav-home {
+            display: none;
+        }
+
+        .right-hover {
+            position: absolute;
+            right: 0px;
+            height: 4vw;
+            width: 4vw;
+            z-index: 5;
+            -webkit-transition: all 0.75s; /* Safari */
+            transition: all 0.75s;
+        }
+
+        .right-hover:hover {
+            height: 5vw;
+            width: 5vw;
+        }
+    </style>
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $(".se-pre-con").remove();
+        });
+
+    </script>
+</head>
+
+<body>
+<div class="se-pre-con"></div>
+<div class="pic-wrapper">
+    <div class="back pic-1">
+    </div>
+    <div class="back pic-2">
+    </div>
+    <div class="back pic-3">
+    </div>
+    <div class="back pic-4">
+    </div>
+</div>
+<a href="https://www.facebook.com/prithvi.iitkgp"><img src="img/fb.png" class="right-hover" style="top: 35vh;"></a>
+<a href="https://twitter.com/Prithvi_IIT_kgp"><img src="img/twitter.png" class="right-hover" style="top: 45vh;"></a>
+<a href="http://www.youtube.com/channel/UCF0rHzKhLx4N6OkaqTnJ8pQ?feature=watch"><img src="img/youtube.png"
+                                                                                     class="right-hover"
+                                                                                     style="top: 55vh;"></a>
+<div class="overallcontainer">
+    <div class="normal-top-navbar">
+        <nav class="navbar navbar-light " id="nav-position">
+            <nav class="navbar navbar-toggleable-md navbar-nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="home.html" id="img-show"><img src="img/prithvi1.png" height="35px"
+                                                                            width="100px"></a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-0 mt-2 mt-lg-0 normal-right nav-size full-screen">
+                        <li class="nav-item mr-5 hovering" id="nav-home">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="home.html#section2">About Us</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="event.html">Events</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering extra">
+                            <a class="nav-link normal-active" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item hovering extra">
+                            <a class="nav-link mr-5" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item hovering extra">
+                            <a class="nav-link mr-5" href="workshop.html">Workshop</a>
+                        </li>
+
+                        <li class="nav-item hovering extra">
+                            <a class="nav-link mr-5" href="seminar.html">Seminars</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="contact.html">Our Team</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="spons.html">Sponsors</a>
+                        </li>
+                        <li class="nav-item mr-5 hovering">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                    </ul>
+                    <hr id="extra-hr">
+                </div>
+            </nav>
+        </nav>
+        <hr id="normal-top-hr">
+    </div>
+    <div class="normal-text ">
+        <h2 class="heading">FAQ</h2>
+        <hr style="width: 82vw; margin-left: -3vw;">
+        <div id="preguntas" class="faq">
+            <h4>How do I reach Kharagpur?</h4>
+            <div class="respuesta">
+                <p>Kharagpur (KGP) station is connected to all the major train stations of the country. But in case if
+                    your station has no direct trains to KGP then catch a train to Kolkata. It takes 2-3 hours by train
+                    to reach Kharagpur from Kolkata.</p>
+            </div>
+            <h4>How do I reach IIT campus on reaching KGP station?</h4>
+            <div class="respuesta">
+                <p>The route from station to IIT KGP is not at all hectic rather a well known one. You can hire a cab or
+                    an auto from KGP station to IIT Kharagpur. The recent rates are around Rs10 per person for auto or a
+                    cab facility with 6-8 occupancy for Rs 150 per cab.</p>
+            </div>
+            <h4>What about accommodation during the fest?</h4>
+            <div class="respuesta">
+                <p>There will be no problem of accommodation on reaching IIT campus. Accommodation will be free of cost.
+                    Accommodation for girls will be separate and will have 24 hour authorized security. You will be
+                    provided with blankets, pillows and mattress.</p>
+            </div>
+            <h4>What about the security, I have fears that my belongings could be stolen?</h4>
+            <div class="respuesta">
+                <p>IIT Kharagpur has 24 hours of vigilant and authorized security in the entire campus. Security
+                    personnel will be at the security desk of individual hostels. But still avoid carrying any expensive
+                    items which are not required. We can't guarantee the safety of your belongings, we will try our
+                    level best to ensure the security but you are solely responsible for the safety of your
+                    belongings.</p>
+            </div>
+            <h4>Where do I eat?</h4>
+            <div class="respuesta">
+                <p>There are number of good restaurants within the campus which serve both non-veg and veg dishes.
+                    Further, this time Prithvi 2018 is possibly going to have a food court with caterers like Dominos
+                    Pizza, Rooster etc.</p>
+            </div>
+            <h4>In case of medical emergency, where should I go?</h4>
+            <div class="respuesta">
+                <p>Campus has B.C. Roy Hospital with 24 hours of medical facility. In case of medical emergency do
+                    inform our team members and we shall ensure immediate action. Contacts are provided on the website
+                    of Prithvi 2018.</p>
+            </div>
+            <h4>How many participants and teams can participate from one university?</h4>
+            <div class="respuesta">
+                <p>There is no limit on number of participants and number of teams from a university.</p>
+            </div>
+            <h4>In how many events can one participate?</h4>
+            <div class="respuesta">
+                <p>You can participate in all the events. We will make sure that no events overlap.</p>
+            </div>
+            <h4>What about team registration?</h4>
+            <div class="respuesta">
+                <p>Team registration will be done on the spot.</p>
+            </div>
+            <h4>What are the registration charges ?</h4>
+            <div class="respuesta">
+                <p>The registration charges will be disclosed soon. This includes entry to all events, guest lectures,
+                    workshops, one Executive dinner and accommodation in hostels. Each participant will receive
+                    T-shirts, writing pads, folders and other goodies against that money.</p>
+            </div>
+            <h4>When will I get my certificates and prizes?</h4>
+            <div class="respuesta">
+                <p>Certificate and prizes will be given on the concluding day of the Prithvi 2018.</p>
+            </div>
+            <h4>I still have some unanswered questions. What do I do?</h4>
+            <div class="respuesta">
+                <p> Your questions are always welcome. Contact of the team members looking after each event is provided
+                    with individual events. For general query you can mail to query@prithvi-geo.in.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="normal-bottom-navbar">
+        <div class="normal-bottom-navbar extra-one">
+            <hr id="normal-bottom-hr">
+            <nav class="navbar navbar-light">
+                <nav class="navbar navbar-toggleable-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-size">
+
+                            <li class="nav-item mr-5 hovering">
+                                <a class="nav-link normal-active" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item hovering">
+                                <a class="nav-link mr-5" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item hovering">
+                                <a class="nav-link mr-5" href="workshop.html">Workshop</a>
+                            </li>
+                            <li class="nav-item hovering">
+                                <a class="nav-link mr-5" href="seminar.html">Seminars</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </div>
+    </div>
+</div>
+<script src="faq/js/index.js"></script>
+
+</body>
+</html>

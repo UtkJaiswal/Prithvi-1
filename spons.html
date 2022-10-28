@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prithvi 2018| Sponsors</title>
+
+    <link rel="shortcut icon"
+          href="http://www.prithvi-geo.in/prithvi17/images/xprithvi-icon.png.pagespeed.ic.rhggCfOJMM.webp"
+          type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Cinzel|Raleway:500');
+
+        .navbar-light .nav-link {
+            color: white !important;
+        }
+
+        .navbar {
+            background: #232428;
+        }
+
+        .navbar a {
+            color: white;
+            font-size: 0.98em;
+
+        }
+
+        hr {
+            background-color: white;
+        }
+
+        .active {
+            font-weight: bold;
+        }
+
+        /*    section p img {
+          background: url('img/loading.gif') no-repeat;
+        }*/
+        .hovering a {
+            display: block;
+            text-decoration: none;
+            margin: 0 0px;
+            position: relative;
+            transition: all .5s;
+        }
+
+        .hovering a:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            content: ' ';
+            color: transparent;
+            background: white;
+            height: 1px;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .hovering a:hover {
+            color: white;
+            z-index: 1;
+        }
+
+        .hovering a:hover:after {
+            z-index: -10;
+            animation: fill 1s forwards;
+            opacity: 1;
+        }
+
+        @-webkit-keyframes fill {
+            0% {
+                width: 0;
+                height: 1px;
+            }
+            100% {
+                width: 100%;
+                height: 1px;
+            }
+        }
+
+        /* ================
+        Assign Variables */
+        /* ===========================
+        Setup Mixins/Helper Classes */
+        @-webkit-keyframes backgroundScroll {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -3820px 0;
+            }
+        }
+
+        @keyframes backgroundScroll {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -3820px 0;
+            }
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        /* ==========
+        Setup Page */
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        .show-event {
+            margin-left: 5%;
+            width: 90%;
+        }
+
+        .extra1 {
+            text-align: center;
+            margin-left: 32.5%;
+        }
+
+        .extra {
+            display: flex;
+        }
+
+        .show-food {
+            width: 27%;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            color: #a4bcc3 !important;
+            text-align: center;
+            font-family: 'Cinzel', serif !important;
+            background-color: #2c2e33 !important;
+        }
+
+        body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+
+        body::-webkit-scrollbar {
+            width: 10px;
+            background-color: #F5F5F5;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #000000;
+            border: 2px solid #555555;
+        }
+
+        section {
+            padding: 2em;
+            border-radius: .5em;
+            margin-top: 6%;
+            width: 85%;
+            margin-left: 7.5%;
+            margin-right: 5%;
+
+        }
+
+        .show-column {
+            width: 40%;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        .collapse.show {
+            height: 100vh;
+        }
+
+        @media only screen
+        and (orientation: landscape) {
+            .collapse.show {
+                height: 90vh;
+            }
+        }
+
+        @media (max-width: 991px) {
+            #nav-size {
+                font-size: 3.6rem;
+            }
+
+            .navbar-brand {
+                height: 60px;
+            }
+
+            .fixed-top {
+                overflow: auto;
+
+            }
+
+            #img-size {
+                height: 60px;
+                width: 160px;
+            }
+        }
+
+        .footer {
+            padding: 1rem;
+            background-color: #232428;
+            margin-top: 4em;
+        }
+
+        @media only screen
+        and (max-width: 992px)
+        and (orientation: portrait) {
+            .footer {
+                position: absolute;
+                top: 140vh;
+                width: 100%;
+            }
+        }
+    </style>
+    <script src="js/jquery-3.1.1.js"></script>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light">
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+        <a class="navbar-brand mr-4" href="home.html"><img id="img-size" src="img/prithvi1.png" height="40px"
+                                                           width="100px"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-5" id="nav-size">
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="home.html#section2">About Us</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="event.html">Events</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="workshop.html">Workshops</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="seminar.html">Seminars</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="contact.html">Our Team</a>
+                </li>
+                <li class="nav-item mr-2 active hovering">
+                    <a class="nav-link" href="#">Sponsors</a>
+                </li>
+                <li class="nav-item hovering">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section>
+    <!-- <h2 class="ribbon"> -->
+    <h2>
+        <span>Sponsors: 2017</span>
+    </h2><br><br>
+    <p>
+    </p>
+    <div class="extra1">
+        <div class="show-column">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Title Sponsors</span>
+            </h4><br>
+            <p>
+                <a href="http://www.oil-india.com/oilnew/"><img src="spons/oilindia.jpg" height="70%" width="70%"></a>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="extra1">
+        <div class="show-column">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Major Sponsors</span>
+            </h4><br>
+            <p>
+                <a href="https://www.cairnindia.com/"><img src="spons/cairn.png" height="70%" width="70%"
+                                                           style="margin-top:-5% "></a>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="show-event">
+        <!-- <h4 class="banner"> -->
+        <h4>
+            <span>Event Sponsors</span>
+        </h4><br>
+        <p>
+            <a href="http://www.spgindia.org/"><img src="spons/spg.png" height="20%" width="20%" class="mr-5"></a>
+            <a href="http://www.ongcindia.com/wps/wcm/connect/ongcindia/home/"><img src="spons/ongc.png" height="12%"
+                                                                                    width="12%" class="mr-5"></a>
+            <img src="spons/amd.png" height="12%" width="12%">
+        </p>
+    </div>
+    <br><br>
+    <div class="extra">
+        <div class="show-food">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Food Sponsors</span>
+            </h4><br>
+            <p>
+                <a href="http://www.kaizing.com/"><img src="spons/kaizing.jpg" height="40%" width="40%"></a>
+            </p>
+        </div>
+        <div class="show-food">
+
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Online Quiz Partner</span>
+            </h4><br>
+            <p>
+                <a href="https://dare2compete.com/"><img src="spons/dare2compete.png" height="60%" width="60%"></a>
+            </p>
+        </div>
+        <div class="show-food">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>SMS Partner</span>
+            </h4><br>
+            <p>
+                <a href="https://mobtexting.com/"><img src="spons/mobtexting.png" height="60%" width="60%"></a>
+            </p>
+        </div>
+
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+
+    <!-- <h2 class="ribbon"> -->
+    <h2>
+        <span>Sponsors: 2016</span>
+    </h2><br><br><br>
+    <p>
+    </p>
+    <div class="extra">
+        <div class="show-column">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Title Sponsors</span>
+            </h4><br>
+            <p>
+                <a href="http://www.ongcindia.com/wps/wcm/connect/ongcindia/home/"><img src="spons/ongc.png"
+                                                                                        height="30%" width="30%"></a>
+            </p>
+        </div>
+        <div class="show-column">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Ruby Sponsors</span>
+            </h4><br>
+            <p>
+                <a href="http://www.iitkgp.ac.in/"><img src="spons/ruby.jpg" height="80%" width="80%"
+                                                        style="margin-top: -5%"></a>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="extra">
+        <div class="show-column">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Event Sponsors</span>
+            </h4><br>
+            <p>
+                <a href="http://www.spgindia.org/"><img src="spons/spg.png" height="40%" width="40%"></a>
+            </p>
+        </div>
+        <div class="show-column">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Workshop Partner</span>
+            </h4><br>
+            <p>
+                <a href="http://geovale.com/"><img src="spons/geovale.png" height="70%" width="70%"></a>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="extra">
+        <div class="show-column">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Technical Partner</span>
+            </h4><br>
+            <p>
+                <a href="https://www.cairnindia.com/"><img src="spons/cairn.png" height="33%" width="33%"></a>
+                <a href="http://www.slb.com/"><img src="spons/schlum.gif" height="33%" width="33%"></a>
+            </p>
+        </div>
+        <div class="show-column">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Gift Partner</span>
+            </h4><br>
+            <p>
+                <a href="http://www.frogo.in/"><img src="spons/frogo.png" height="20%" width="20%"></a>
+                <a href="http://www.ebay.in/"><img src="spons/ebay.jpg" height="40%" width="40%"></a>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="extra">
+        <div class="show-food">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Food Sponsors</span>
+            </h4><br>
+            <p>
+                <a href="http://www.kaizing.com/"><img src="spons/kaizing.jpg" height="40%" width="40%"></a>
+            </p>
+        </div>
+        <div class="show-food">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>Online Quiz Partner</span>
+            </h4><br>
+            <p>
+                <a href="http://dare2compete.com/"><img src="spons/dare2compete.png" height="60%" width="60%"></a>
+            </p>
+        </div>
+        <div class="show-food">
+            <!-- <h4 class="banner"> -->
+            <h4>
+                <span>SMS Partner</span>
+            </h4><br>
+            <p>
+                <a href="https://mobtexting.com/"><img src="spons/mobtexting.png" height="60%" width="60%"></a>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="show-event">
+        <!-- <h4 class="banner"> -->
+        <h4>
+            <span>Online Media Partners</span>
+        </h4><br>
+        <p>
+            <a href="http://www.blogadda.com/"><img src="spons/blogadda.jpg" height="20%" width="20%" class="mr-2"></a>
+            <a href="https://www.brainbuxa.com/"><img src="spons/brainbuxa.png" height="20%" width="20%"
+                                                      class="mr-2"></a>
+            <a href="http://thecollegefever.com/"><img src="spons/collegefever.png" height="20%" width="20%"
+                                                       class="mr-2"></a>
+            <a href="http://festpav.com/"><img src="spons/festpav.png" height="20%" width="20%" class="mr-2"></a>
+            <a href="http://www.hook2events.com/"><img src="spons/hook2events.jpg" height="20%" width="20%"
+                                                       class="mr-2"></a>
+            <a href="http://www.knowafest.com/"><img src="spons/knowafest.png" height="20%" width="20%"
+                                                     class="mr-2"></a>
+            <a href="http://www.twenty19.com/"><img src="spons/twenty19.jpeg" height="20%" width="20%" class="mr-2"></a>
+
+        </p>
+    </div>
+</section>
+</div>
+<div class="footer">
+    <div style="text-align: center">Follow Us On:<br>
+        <a href="https://www.facebook.com/prithvi.iitkgp"><i class="fa fa-facebook mr-5"
+                                                             style="font-size:25px;"></i></a>
+        <a href="https://twitter.com/Prithvi_IIT_kgp"><i class="fa fa-twitter mr-5" style="font-size:25px;"></i></a>
+        <a href="http://www.youtube.com/channel/UCF0rHzKhLx4N6OkaqTnJ8pQ?feature=watch"><i class="fa fa-youtube"
+                                                                                           style="font-size:25px;"></i></a>
+    </div>
+    <div style="text-align: left;">
+        Website Credit: <a href="https://www.facebook.com/abhinav.saini.507">Abhinav Saini</a>
+    </div>
+</div>
+</body>
+</html>

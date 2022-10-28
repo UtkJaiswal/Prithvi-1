@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js A simple Demo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="../../js/jquery-3.1.1.js"></script>
+
+	<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+			});
+		});
+	</script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+  nav{
+    position: absolute !important;
+    top: 0 !important;
+    width: 100% !important;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+  }
+</style>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section active" id="section0"><h1>fullPage.js</h1></div>
+	<div class="section" id="section2">
+		  <nav class="navbar navbar-toggleable-md navbar-light">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <a class="navbar-brand mr-4" href="home.html"><img id="img-size" src="img/prithvi1.png" height="40px" width="100px"></a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-5"  id="nav-size">
+          <li class="nav-item mr-2 hovering">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item mr-2 active hovering">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item mr-2 hovering">
+            <a class="nav-link" href="event.html">Events</a>
+          </li>
+          <li class="nav-item mr-2 hovering">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item mr-2 hovering">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item mr-2 hovering">
+            <a class="nav-link" href="workshop.html">Workshops</a>
+          </li>
+          <li class="nav-item mr-2 hovering">
+            <a class="nav-link" href="seminar.html">Seminars</a>
+          </li>
+          <li class="nav-item mr-2 hovering">
+            <a class="nav-link" href="contact.html">Our Team</a>
+          </li>
+          <li class="nav-item mr-2 hovering">
+            <a class="nav-link" href="#">Sponsors</a>
+          </li>
+          <li class="nav-item hovering">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	</div>
+	<!-- <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div> -->
+</div>
+
+</body>
+</html>

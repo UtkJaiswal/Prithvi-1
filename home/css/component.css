@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Raleway:500');
+
+/* Header */
+/*.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}*/
+.home .large-header {
+	/*background-image: url('../img/home1.jpg');*/
+	background-position: center no-repeat;
+	background-size: cover;
+/*	filter: brightness(70%);
+*/
+      /*background-color: rgba(0,0,0,0.3);*/
+      /*background-blend-mode: darken;}*/
+  }
+/*@media only screen and (max-width: 1090px) {
+.home .large-header {
+	background-image: url('../img/bg1.jpg');
+	background-position: center no-repeat;
+}
+}
+*/
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	top: 50%;
+	color: black;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+/*@media screen and (min-width: 1090px){
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	top: 50%;
+	color: black;
+	left: 45%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+}*/
+.main-title a{
+	color: white;
+}
+
+.home .main-title {
+	font-family: 'Cinzel', serif;
+	font-weight: normal;
+	font-size: 3em;
+	padding-left: 10px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+.main-title.insti-logo{
+	position: absolute;
+    left: 40px;
+    top: 50px;
+    height: 50px;
+}
+.main-title.prithvi-logo{
+	position: absolute;
+    left: 150px;
+    top: 50px;
+    height: 50px;
+}
+.spg-logo{
+	position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+}
+.seg-logo{
+	position: absolute;
+    right: 70px;
+    bottom: 20px;
+    height: 50px;
+}
+.aapg-logo{
+	position: absolute;
+    right: 130px;
+    bottom: 20px;
+    height: 50px;
+}
+
+.home .main-title::before {
+	content: '';
+	width: 20vw;
+	height: 20vw;
+	min-width: 3.5em;
+	min-height: 3.5em;
+	/*background: url(../img/deco.svg) no-repeat center center;*/
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	z-index: -1;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	/*filter: brightness(30%);*/
+/*filter:grayscale(10%);}*/
+}
+
+
+
+.main-title .thin {
+	font-weight: 200;
+}
+.main-title-p{
+	font-size: 22.5px;
+}
+@media only screen and (max-width : 768px) {
+
+	.home .main-title {
+		font-size: 2.8em;
+	}
+	.main-title.insti-logo{
+    left: 20px;
+    top: 30px;
+    height: 40px;
+}
+	.main-title.prithvi-logo{
+    left: 65px;
+    top: 30px;
+    height: 40px;
+}
+.spg-logo{
+height: 40px;
+right: 10px;
+bottom: 10px;
+}
+.aapg-logo{
+height: 40px;
+right:52.5px;
+bottom: 10px;
+}
+.seg-logo{
+height: 40px;
+bottom: 10px;
+right: 100px;
+}
+.main-title-p{
+	font-size: 18px;
+}
+}

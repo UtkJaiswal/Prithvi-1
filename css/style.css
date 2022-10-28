@@ -1,0 +1,286 @@
+
+/*--------------For All Pages--------------*/
+        @import url('https://fonts.googleapis.com/css?family=Cinzel|Raleway:500');
+
+body{
+	overflow-x: hidden;
+	/*overflow-y: hidden;*/
+	color:white !important;
+	background-color: black !important;
+	height: 100vh;
+	width:100vw;
+}
+
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+.overallcontainer{
+	position: absolute;
+	background-color: transparent;
+	top:2vh;
+	left: 2vw;
+	min-height: 96vh;
+	width: 96vw;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	border-left: 1px solid;
+	border-radius: 0px 50px 0px 50px;
+	border-right: 1px solid; 
+}
+
+@media screen and (min-width:1400px){
+.overallcontainer{
+	transform: scale(1);
+}
+}
+.overallcontainer::-webkit-scrollbar { 
+	display: none; 
+}
+li a{
+    font-family: "Cinzel", serif;
+	font-size: 19px;
+	color:white !important;
+}
+/*li a:hover{
+	background-color: rgba(16,0,0,0.6);
+	border-radius: 50px 15px;
+	}*/
+
+	.normal-active{
+		font-weight: bolder;
+	}
+	.normal-right {
+		position: absolute;
+		right: 0;
+	}
+	.heading{
+		    font-family: "Cinzel", serif !important;
+		line-height: 50px;  
+		width: 30%; 
+		margin-left: 35%;	
+		border-radius: 50px 15px; 
+		margin-right: 40%; 
+		background-color: rgba(8,0,0,0.6); 
+		color: white; 
+		font-size: 40px !important;
+	}
+	@media screen and (max-width: 992px){
+		.normal-right{
+			position: relative;
+		}
+	}
+	hr{
+		background-color: white;
+	}
+	#normal-top-hr{
+		width: 50vw;
+		margin-right:3vw;
+	}
+	.normal-text {
+		letter-spacing: 0.05em;
+        font-family: "Raleway", sans-serif;
+		margin-top: 1vh;
+		width: 80vw;
+		text-align: center;
+		margin-left:10vw; 
+	}
+	.normal-text p{
+		font-size: 15px;
+		margin-left: 0vw;
+		margin-right: 0vw;
+	}
+		@media screen and (max-width: 992px){
+		.normal-text p{
+			font-size: 30px;
+		}
+		.heading{
+		line-height: 80px;  
+		width: 50%; 
+		margin-left: 25%;	
+		font-size: 60px !important;
+	}
+		.outer-tab-menu li a{
+		font-size: 1.4rem !important;
+	}
+	.inner-tab-menu li a{
+		font-size: 1.4rem !important;
+	}
+		.outer-tab-content{
+		max-height: 60vh !important;
+	}
+	.faq{
+		max-height: 100vh !important;
+	}
+	}
+	#first-child {
+		margin-top: 3vh;
+	}
+	#normal-bottom-hr{
+		width: 82vw;
+	}
+	#last-child {
+		margin-bottom: 3vh;
+	}
+	.normal-bottom-navbar{
+		flex-grow: 1;	
+	}
+
+	/*------------------------------------------------------*/
+
+	/*----------------- Event Page CSS ---------------------*/
+
+	.event-text{
+		display: flex;
+		flex-direction: row;
+	}
+	.outer-tab-block{
+		width: 100%;
+	}
+	.outer-tab-menu{
+		flex:1;
+		max-height: 45vh;
+		overflow-y: auto;
+	}
+	.outer-tab-menu::-webkit-scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #F5F5F5;
+	}
+
+	.outer-tab-menu::-webkit-scrollbar
+	{
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+
+	.outer-tab-menu::-webkit-scrollbar-thumb
+	{
+		background-color: #000000;
+		border: 2px solid #555555;
+	}
+
+	.outer-tab-menu .normal-active{
+		border-radius: 0px !important;
+	}
+	.outer-tab-menu li a:hover{
+		background-color: rgba(16,0,0,0.6);
+		border-radius: 0px !important;
+	}
+	.outer-tab-content{
+		flex:3;
+		max-height: 42.5vh;
+		text-align: center;
+		overflow-y: auto;
+	}
+	.outer-tab-content::-webkit-scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #F5F5F5;
+	}
+
+	.outer-tab-content::-webkit-scrollbar
+	{
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+
+	.outer-tab-content::-webkit-scrollbar-thumb
+	{
+		background-color: #000000;
+		border: 2px solid #555555;
+	}
+	.inner-tab-block{
+		width: 100%;
+	}
+	.inner-tab-menu  li{
+		display: inline;
+		margin-right:4rem !important;
+	}
+	a:hover{
+		cursor: pointer;
+	}
+	.inner-tab-pane-left{
+		text-align: left;
+		margin-left: 3vw;
+	}
+	.inner-tab-pane p{
+		margin-left :2vw;
+		margin-right: 2vw;
+	}
+	.outer-tab-pane{
+		background-color: rgba(16,0,0,0.6); 
+		min-height: 45vh;
+	}
+
+
+	/*--------------------------------------------------*/
+
+	/*---------------------- FAQ -----------------------*/
+
+	.faq{
+		margin-left: -20vw !important;
+		width: 100vw !important;
+		max-height: 42.5vh;
+		overflow-y: auto;
+		text-align: left !important;
+	}
+	.faq::-webkit-scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #F5F5F5;
+	}
+
+	.faq::-webkit-scrollbar
+	{
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+
+	.faq::-webkit-scrollbar-thumb
+	{
+		background-color: #000000;
+		border: 2px solid #555555;
+	}
+
+	/*----------------------------------------------------*/
+
+	/*--------------------------Seminar-------------------*/
+
+	.seminar-tab-content{
+		max-height: 48vh;
+		overflow-y: auto;
+		text-align: left;
+	}
+	.seminar-tab-content::-webkit-scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #F5F5F5;
+	}
+
+	.seminar-tab-content::-webkit-scrollbar
+	{
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+
+	.seminar-tab-content::-webkit-scrollbar-thumb
+	{
+		background-color: #000000;
+		border: 2px solid #555555;
+	}
+	/*-----------------------------------------------------*/
+
+	.no-js #loader { display: none;  }
+	.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+	.se-pre-con {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url(../img/prithvi.gif) center no-repeat #fff;
+		background-color:  rgb(227,244,253);
+	}

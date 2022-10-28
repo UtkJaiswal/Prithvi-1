@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prithvi 2018| Seminars</title>
+    <link rel="shortcut icon"
+          href="http://www.prithvi-geo.in/prithvi17/images/xprithvi-icon.png.pagespeed.ic.rhggCfOJMM.webp"
+          type="image/png">
+    <script src="js/jquery-3.1.1.js"></script>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Cinzel|Raleway:500');
+
+        body {
+            font-family: 'Raleway', sans-serif !important;
+            letter-spacing: 0.05em;
+            overflow-x: hidden;
+        }
+
+        h3 {
+            font-family: 'Cinzel', serif !important;
+        }
+
+        .active {
+            font-weight: bold;
+        }
+
+        .navbar {
+            background: rgb(255, 255, 255);
+        }
+
+        .navbar a {
+            color: black !important;
+            font-family: 'Cinzel', serif;
+            font-size: 0.95em;
+        }
+
+        /*    .tabs   img {
+              background: url('img/loading.gif') no-repeat center;
+            }*/
+        .hovering a {
+            display: block;
+            text-decoration: none;
+            margin: 0 0px;
+            position: relative;
+            transition: all .5s;
+        }
+
+        .hovering a:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            content: ' ';
+            color: transparent;
+            background: black;
+            height: 1px;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .hovering a:hover {
+            color: black;
+            z-index: 1;
+        }
+
+        .hovering a:hover:after {
+            z-index: -10;
+            animation: fill 1s forwards;
+            opacity: 1;
+        }
+
+        @-webkit-keyframes fill {
+            0% {
+                width: 0;
+                height: 1px;
+            }
+            100% {
+                width: 100%;
+                height: 1px;
+            }
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        /* ==========
+        Setup Page */
+        body {
+            background: url(img/seminars.jpg) no-repeat center top fixed;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.8);
+            background-blend-mode: darken;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        @-webkit-keyframes backgroundScroll {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -3820px 0;
+            }
+        }
+
+        @keyframes backgroundScroll {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -3820px 0;
+            }
+        }
+
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 3em;
+            /*  background: url(http://subtlepatterns.com/patterns/retina_wood.png);
+            */
+            color: white;
+        }
+
+        body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+
+        body::-webkit-scrollbar {
+            width: 10px;
+            background-color: #F5F5F5;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #000000;
+            border: 2px solid #555555;
+        }
+
+        /* ==========
+        Setup Tabs */
+        .tabs {
+            border-radius: 10px;
+            padding: 2em;
+            margin-top: 2em;
+        }
+
+        .tabs input[type='radio'] {
+            display: none;
+        }
+
+        .tabs input[type='radio'] + label {
+            display: block;
+            float: left;
+            position: relative;
+            width: 33.33333%;
+            font-size: 1.25em;
+            line-height: 1.5em;
+            text-align: center;
+            /*text-overflow: ellipse;*/
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid #ccc;
+            border-right: none;
+            padding: 0 1em;
+            cursor: pointer;
+            margin-bottom: 1em;
+            font-family: 'Cinzel', serif;
+        }
+
+        .tabs input[type='radio'] + label:before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: -1.5em;
+            width: 0;
+            height: 0;
+            border: .75em solid transparent;
+            border-left-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .tabs input[type='radio'] + label:after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: -1.5em;
+            margin-right: 1px;
+            width: 0;
+            height: 0;
+            border: .75em solid transparent;
+            border-left-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .tabs input[type='radio'] + label.first {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .tabs input[type='radio'] + label.last {
+            border-right: 1px solid #ccc;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .tabs input[type='radio'] + label.last:before, .tabs input[type='radio'] + label.last:after {
+            display: none;
+        }
+
+        .tabs input[type='radio'] + label:hover {
+            background: black;
+        }
+
+        .tabs input[type='radio'] + label:hover:after {
+            border-left-color: #eee;
+        }
+
+        .tabs input[type='radio']:checked + label {
+            background: #6EB590;
+            border-color: #6EB590;
+            color: white;
+        }
+
+        .tabs input[type='radio']:checked + label:after {
+            border-left-color: #6EB590;
+        }
+
+        .tabs input[type='radio']:checked + label:before {
+            border-left-color: #6EB590;
+        }
+
+        .tabs .pane {
+            display: none;
+        }
+
+        .tabs #step1radio:checked ~ #step1 {
+            display: block;
+        }
+
+        .tabs #step2radio:checked ~ #step2 {
+            display: block;
+        }
+
+        .tabs #step3radio:checked ~ #step3 {
+            display: block;
+        }
+
+        .collapse.show {
+            height: 100vh;
+        }
+
+        @media only screen
+        and (orientation: landscape) {
+            .collapse.show {
+                height: 90vh;
+            }
+        }
+
+        @media (max-width: 991px) {
+            #nav-size {
+                font-size: 3.6rem;
+            }
+
+            .navbar-brand {
+                height: 60px;
+            }
+
+            #img-size {
+                height: 60px;
+                width: 160px;
+            }
+
+            .fixed-top {
+                text-align: center;
+                overflow: auto;
+            }
+        }
+
+        .footer {
+            padding: 1rem;
+            background: rgb(255, 255, 255) !important;
+            margin-top: 4em;
+            margin-bottom: -3em;
+            margin-left: -3em;
+            margin-right: -3em;
+            font-family: 'Cinzel', serif;
+            color: black;
+
+        }
+
+        @media only screen
+        and (max-width: 992px)
+        and (orientation: portrait) {
+            .footer {
+                position: absolute;
+                bottom: -10em;
+                width: 100%;
+
+            }
+        }
+
+        @media only screen
+        and (min-device-width: 765px)
+        and (max-device-width: 780px)
+        and (min-device-height: 1020px)
+        and (max-device-height: 1030px)
+        and (orientation: portrait) {
+            .footer {
+                bottom: -22em;
+
+            }
+        }
+
+        @media only screen
+        and (min-device-width: 1020px)
+        and (max-device-width: 1030px)
+        and (min-device-height: 1360px)
+        and (max-device-height: 1370px)
+        and (orientation: portrait) {
+            .footer {
+                position: absolute;
+                bottom: -18em;
+                width: 100%;
+
+            }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+        <a class="navbar-brand mr-4" href="home.html"><img src="img/prithvi.png" height="40px" width="100px"
+                                                           id="img-size"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-4" id="nav-size">
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="home.html#section2">About Us</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="event.html">Events</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="workshop.html">Workshops</a>
+                </li>
+                <li class="nav-item mr-2 active hovering">
+                    <a class="nav-link" href="#">Seminars</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="contact.html">Our Team</a>
+                </li>
+                <li class="nav-item mr-2 hovering">
+                    <a class="nav-link" href="spons.html">Sponsors</a>
+                </li>
+                <li class="nav-item hovering">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="tabs">
+    <input checked="checked" id="step1radio" name="radio" type="radio"/><label class="first" for="step1radio">Prithvi
+    2017</label><input id="step2radio" name="radio" type="radio"/><label for="step2radio">Prithvi 2016</label><input
+        id="step3radio" name="radio" type="radio"/><label class="last" for="step3radio">Prithvi 2015</label>
+    <div class="pane" id="step1">
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Seismic in the gamut of Hydrocarbon Exploration & production: an API overview
+        </h3>
+        <p><b>Mr. Pulak Kumar Bera</b><br>
+            Dy. Suptdg Geophysicist(S)<br>
+            ONGC Ltd., Jorhat
+        </p><br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            "Petrophysics in the 21st Century” :More important than ever
+        </h3>
+        <p><b>Mr. Udit Guru</b><br>
+            Advisor<br>
+            Petrophysics at Schlumberger
+        </p><br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Evaluation of a mineral resource, Bunder Diamond Project- A case study
+        </h3>
+        <p><b>Mr. Hrishikesh Das </b><br>
+            Senior Geologist<br>
+            Geovale Services<br><br>
+        </p>
+    </div>
+    <div class="pane" id="step2">
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Role of Geoscientist in Developing Oil and Gas Fields: The State of the Art
+        </h3>
+        <p><b>Mr. Dronamraju Sharma</b><br>
+            Director, AKD Professional Solutions <br>
+            Houston
+        </p><br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Isotopic “Sore thumbs”: Implications to geo and cosmochemical processes.
+        </h3>
+        <p><b>Dr. R.V. Krishnamurthy</b><br>
+            Prof. Stable Isotope Geochemistry<br>
+            Western Michigan University
+        </p><br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Recent Advances in Well logging Techniques
+        </h3>
+        <p><b>Mr. Asim Samanta</b><br>
+            Ret. Group General Manager,ONGC
+        </p><br><br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Growth of E&P Sector and Future Challenges
+        </h3>
+        <p><b>Mr. Saumitra Gupta</b><br>
+            Freelance Principal Consultant <br>
+            Geologist, visiting faculty Presidency University
+        </p>
+        <br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Reservoir Evaluation for shale
+        </h3>
+        <p><b>Mr. Udit Guru</b><br>
+            Ex-Advisor, Petrophysicist at Schlumberger
+        </p>
+        <br><br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Excitement of Studying Earth Science
+        </h3>
+        <p><b>Dr. Abhijit Bhattacharya</b><br>
+            Senior Professor<br>
+            IIT Kharagpur
+        </p>  <br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Monitoring of Groundwater and Surface Water in the Bengal Basin: an Overview
+        </h3>
+        <p><b>Mr. Md. Ejar Uddin</b><br>
+            Former Director <br>
+            Bangladesh Water Development Board<br><br>
+        </p>
+    </div>
+    <div class="pane" id="step3">
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            People, Process and Technology - Integration for Sustainable Business Growth
+        </h3>
+        <p><b>Mr. Apurba Saha</b> is the Director & ExCo Member, Cairn India Ltd. He is also the Chairman of Technical
+            Forum Committee. He completed his master’s Degree from IIT, Kharagpur in Exploration Geosciences and M.Tech
+            from Indian School of Mines, Dhanbad, then Mr. saha joined E & P industry in 1975. He has more than 39yrs of
+            experiences in E&P Industries. Mr. Saha conceptualized and executed number of high value projects in Indian
+            Offshore and also been instrumental in inducting number of new Tools, Techniques & Technologies not only for
+            the first time in ONGC but also in India. Mr.Saha was the OSD (offshore) and Asset Manager of India’s
+            largest producing Asset, Mumbai High of ONGC before joining cairn India.
+        </p>  <br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            300 Years of the Longitude Problem
+        </h3>
+        <p><b>Dr Achintya Pal:</b>
+            After doing his Bachelor’s from Presidency College and Masters from University of Calcutta, Dr Achintya Pal
+            did PhD in Theoretical Physics from The Tata Institute of Fundamental Research (TIFR), Mumbai where he
+            developed interest in Astronomy and Astrophysics. He spent two years as visiting fellow at the Institute for
+            Geophysics at the University of Texas at Austin. Among his other interests are Hindustani classical music
+            and study of literature. The author is a retired executive of Oil & Natural Gas Corporation (ONGC), the
+            national oil company of India. Over the years, he is considered as an expert in oil exploration related
+            geodesy and map projection systems and in Geographical Information System (GIS). A visit to the Royal
+            Observatory in Greenwich kindled his interest in the Longitude Problem.
+        </p>  <br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Leveraging Technology for Hydrocarbon Exploration-Looking Into Future
+        </h3>
+        <p><b>Dr. Subrata Chakraborty</b>, Vice President, SPG Kolkata Chapter, DGM (GP) joined ONGC in the year 1983 as
+            Geophysicist (Surface) in Dehradun, Computer Services Division. He has experience in seismic data processing
+            of onshore and offshore data using different vintage of hardware and software version. He has vast
+            experience in seismic data acquisition .He started journey as observer in field, and finally elevated to In
+            charge operation . He has handled contract management, procurement and other technical issue . He acted as
+            in charge data processing in Kolkata. Presently he is Head of Geophysical services of Kolkata region.
+        </p>  <br><br>
+        <img src="img/guest lectures.jpg" style="float: right;" height="35%" width="30%">
+        <h3>
+            Present & Future Groundwater resources availability and management of India
+        </h3>
+        <p><b>Dr. Dipankar Saha</b><br><br><br><br>
+        </p>
+    </div>
+</div>
+<div class="footer">
+    <div style="text-align: center">Follow Us On:<br>
+        <a href="https://www.facebook.com/prithvi.iitkgp"><i class="fa fa-facebook mr-5"
+                                                             style="font-size:25px;"></i></a>
+        <a href="https://twitter.com/Prithvi_IIT_kgp"><i class="fa fa-twitter mr-5" style="font-size:25px;"></i></a>
+        <a href="http://www.youtube.com/channel/UCF0rHzKhLx4N6OkaqTnJ8pQ?feature=watch"><i class="fa fa-youtube"
+                                                                                           style="font-size:25px;"></i></a>
+    </div>
+<!--    <div style="text-align: left;">
+        Website Credit: <a href="https://www.facebook.com/abhinav.saini.507">Abhinav Saini</a>
+    </div>-->
+</div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Prithvi-18</title>
+        <link rel="shortcut icon" href="http://www.prithvi-geo.in/prithvi17/images/xprithvi-icon.png.pagespeed.ic.rhggCfOJMM.webp" type="image/png">
+        <!--  <meta name="author" content="Codrops" /> -->
+        <link rel="stylesheet" href="home/css/reset.css"> <!-- CSS reset -->
+        <link rel="stylesheet" href="home/css/style.css"> <!-- Resource style -->
+        <script src="home/js/modernizr.js"></script> <!-- Modernizr -->
+        <link rel="stylesheet" type="text/css" href="home/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="home/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="home/css/component.css" />
+        <link href='home/css/font.css' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            .hovering a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                margin: 0 0px;
+                position:relative;
+                transition: all .5s;
+            }
+            body{
+                overflow: hidden;
+            }
+            .pic-wrapper {
+                position: absolute;
+                top:-1%;
+                width: 100%;
+                height: 101vh;
+                overflow: hidden;
+            }
+            .back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+    /*            animation: slideShow 24s linear infinite 0s;
+                -webkit-animation: slideShow 24s linear infinite 0s;*/
+            }
+    /*        @media only screen and (min-width: 1090px) {
+            .back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 87.5%;
+                height: 100%;
+                opacity: 0;
+            }
+        }*/
+            .pic-1 {
+                opacity: 0.6;
+                background: url(home/img/home3.jpg) no-repeat center top fixed;
+                background-size: cover;
+            }
+
+    /*        .pic-2 {
+                animation-delay: 6s;
+                background: url(home/img/home2.jpg) no-repeat center bottom;
+                background-size: cover;
+            }
+            .pic-3 {
+                animation-delay: 12s;
+                background: url(home/img/home3.jpg) no-repeat center top fixed;
+                background-size: cover;
+            }
+
+            .pic-4 {
+                animation-delay: 18s;
+                background: url(home/img/home6.jpg) no-repeat center center;
+                background-size: cover;
+            }*/
+    /*        @keyframes slideShow {
+                0% {
+                    opacity: 0.4;
+                    transform: scale(1);
+                }
+                5% {
+                    opacity: 0.8;
+                }
+                25% {
+                    opacity: 0.8;
+                }
+                30% {
+                    opacity: 0;
+                    transform: scale(1);
+                }
+                100% {
+                    opacity: 0;
+                    transform: scale(1);
+                }
+            }*/
+
+
+            .hovering a:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 0;
+                content: ' ';
+                color: transparent;
+                background:  white;
+                height: 1px;
+                text-align: center;
+                opacity: 0;
+            }
+
+            .hovering a:hover {
+                color: grey;
+                z-index: 1;
+            }
+            .hovering a:hover:after{
+                z-index: -10;
+                animation: fill 1s forwards;
+                opacity: 1;
+            }
+            @-webkit-keyframes fill {
+                0% {
+                    width: 0;
+                    height: 1px;
+                }
+                100% {
+                    width: 0%;
+                    height: 1px;
+                }
+            }
+
+            .no-js #loader { display: none;  }
+            .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+            .se-pre-con {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: url(img/prithvi.gif) center no-repeat #fff;
+                background-color:  rgb(227,244,253);
+            }
+            .prithvi-logo1{
+                margin-left: 50%;
+                transform: translate( -50% , 0 );
+            }
+            .prithvi-logo1{
+                height: 80px;
+                width: auto;
+            }
+            .img-logo{
+                height: 55px !important;
+            }
+            .insti-logo{
+                height: 55px;
+                position: absolute;
+                top: 10px;
+                left:10px;
+            }
+            .main-title hr{
+                background: white; 
+                border: none; 
+                height: 3px; 
+                width: 90%;
+            }
+            .main-title span{
+            color: white;
+            font-size: 0.6em;
+            }
+
+            @media screen and (max-width: 992px){
+                .prithvi-logo1{
+                    height:35px;
+                }
+                .main-title span{
+                    font-size: 0.35em;
+                }
+                .img-logo{
+                    height: 37.5px !important;
+                }
+                .insti-logo{
+                    height: 35px;
+                }
+            }
+            @media screen and (max-width: 325px){
+                .prithvi-logo1{
+                    height:30px;
+                }
+                .main-title span{
+                    font-size: 0.3em;
+                }
+                .img-logo{
+                height: 32.5px !important;
+                }
+                .insti-logo{
+                    height: 32.5px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="se-pre-con"></div>
+            <div class="pic-wrapper">
+            <div class="back pic-1">
+            </div>
+      </div>
+        <nav>
+            <ul class="cd-primary-nav">
+                <li class="hovering"><a href="about.html">About Us</a></li>
+                <li class="hovering"><a href="event.html">Events</a></li>
+                <li class="hovering"><a href="faq.html">FAQ</a></li>
+                <li class="hovering"><a href="gallery.html">Gallery</a></li>
+                <li class="hovering"><a href="workshop.html">Workshop</a></li>
+                <li class="hovering"><a href="seminar.html">Seminars</a></li>
+                <li class="hovering"><a href="spons.html">Sponsors</a></li>
+                <li class="hovering"><a href="contact.html">Our Team</a></li>
+                <li class="hovering"><a href="#">Register</a></li>
+            </ul>
+        </nav>
+
+        <main class="cd-content">
+            <div class="container home">
+                <div class="content">
+                    <div id="large-header" class="large-header">
+                        <canvas id="demo-canvas"></canvas>
+                        <a href="http://www.iitkgp.ac.in/department/GG"><img src="img/GG EX.png" class="insti-logo"> <!-- <h5>Department of Geology and Geophysics</h5>--></a>
+                        <!-- <a href="http://iitkgp.ac.in/"><img class="main-title insti-logo" src="img/iitkgp.png"></a>
+                        <a href="http://seg.org/studentchapters"><img class="seg-logo" src="img/seg.png"></a>
+                        <a href="https://www.spgindia.org/details.php?pgID=sub_25"><img class="spg-logo" src="img/spg.png"></a>
+                        <a href="http://www.aapg.org/"><img class="aapg-logo" src="img/aapg.png"></a>
+                        <a href="http://www.iitkgp.ac.in/department/GG"><img class="main-title prithvi-logo" src="img/GG-logo.jpg"></a> -->
+                        <h1 class="main-title" style="line-height: 0.7">
+                            <a href="about.html"> <img src="img/prithvi20181.png" class="prithvi-logo1"></a>
+                            <hr>
+                            <span>16<sup>th</sup> - 18<sup>th</sup> March, 2018</span><br><br><a href="http://seg.org/studentchapters"><img src="img/seg.jpg" class="img-logo" style="margin-right: 5%;"></a><a href="https://www.spgindia.org/details.php?pgID=sub_25"><img src="img/spg.png" class="img-logo" style="margin-right: 5%;"></a><a href="http://www.aapg.org/"><img src="img/aapg.png" class="img-logo"></a>
+                        </h1>
+                    </div>
+                </div>
+            </div><!-- /container -->
+        </main> <!-- cd-content -->
+
+        <div class="cd-overlay-nav">
+            <span></span>
+        </div> <!-- cd-overlay-nav -->
+
+        <div class="cd-overlay-content">
+            <span></span>
+        </div> <!-- cd-overlay-content -->
+
+        <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="home/js/velocity.min.js"></script>
+        <script src="home/js/main.js"></script> <!-- Resource jQuery -->
+        <script src="home/js/rAF.js"></script>
+        <script src="home/js/home.js"></script>
+    </body>
+    </html>
